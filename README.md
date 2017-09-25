@@ -1,4 +1,4 @@
-# codeigniter-login-logout-register
+# codeigniter-login-logout-register-ceate/edit/delete tasks
 A user login, logout, register, create/edit/delete tasks in Codeigniter 3
 
 ## Installation
