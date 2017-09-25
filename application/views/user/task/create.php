@@ -24,7 +24,7 @@
 			<?php endif; ?>
 		<div class="col-md-4" style="margin: 0 auto; float:none;">
 			<div class="page-header">
-				<h1>Create Task</h1>
+				<h1><?=$edit_action ?> Task</h1>
 			</div>
 			<?= form_open() ?>
 				<div class="form-group">

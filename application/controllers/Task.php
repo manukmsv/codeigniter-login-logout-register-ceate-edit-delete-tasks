@@ -56,8 +56,8 @@ class Task extends CI_Controller {
 	    $this->load->library('form_validation');
 	    
 	    // set validation rules
-	    $this->form_validation->set_rules('name', 'Name', 'trim|required|alpha_numeric|min_length[2]');
-	    $this->form_validation->set_rules('description', 'Description', 'trim|required|alpha_numeric|min_length[2]');
+	    $this->form_validation->set_rules('name', 'Name', 'trim|required|min_length[2]');
+	    $this->form_validation->set_rules('description', 'Description', 'trim|required|min_length[2]');
 
 	    $actions = "creat";
 	    
@@ -84,7 +84,7 @@ class Task extends CI_Controller {
 	        $data->edit_task = $this->task_model->get_task($task_id);
 	        $data->edit_action = "Update";
 	    } else {
-	        $data->edit_action = "create";
+	        $data->edit_action = "Create";
 	    }
 	    // validation not ok, send validation errors to the view
 	    $this->load->view('header');
