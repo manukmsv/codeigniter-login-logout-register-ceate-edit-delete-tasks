@@ -37,7 +37,7 @@ CREATE TABLE `tasks` (
   PRIMARY KEY (id)
 );
 ```
-Go to http://<siteurl>/register and create a user
+Go to http://siteurl/register and create a user
 
 ## Usage
 It is just a starter for user login logout register create/edit/delete task functionalities.
