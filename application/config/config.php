@@ -17,7 +17,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/manu/soding-assignment/';
+$sysurl = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+$sysurl .= "://" . $_SERVER['HTTP_HOST'];
+$sysurl .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+
+$config['base_url']    = $sysurl;
 
 /*
 |--------------------------------------------------------------------------

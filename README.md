@@ -1,8 +1,8 @@
-# codeigniter-login-logout-register-ceate/edit/delete tasks
+# Codeigniter-login-logout-register-ceate/edit/delete tasks
 A user login, logout, register, create/edit/delete tasks in Codeigniter 3
 
 ## Installation
-1. Open /application/config/config.php and edit with your base url ($config['base_url'])
+1. Open /application/config/config.php and edit with your base url ($config['base_url']) (optional)
 2. Open /application/config/database.php and edit with your database settings
 3. On your database, open a SQL terminal paste this and execute: (sample database in the folder 'database_backup' :- user: name, password: name@gmail.com)
 
